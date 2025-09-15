@@ -417,7 +417,172 @@
         
         
          <!-- Experience Start -->
-        <div class="experience" id="experience">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience Timeline</title>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- WOW.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #e63946; /* Red timeline line */
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+      z-index: -1; /* Push behind circles */
+    }
+    .timeline-item {
+      padding: 20px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+    .timeline-item.left {
+      left: 0;
+    }
+    .timeline-item.right {
+      left: 50%;
+    }
+    .timeline-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #eee;
+    }
+    .timeline-content:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(230,57,70,0.3); /* Red glow */
+    }
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -13px;
+      background-color: #fff; /* White filled sphere */
+      border: 4px solid #e63946; /* Red border */
+      top: 30px;
+      border-radius: 50%;
+      z-index: 2;
+    }
+    .timeline-item.right::after {
+      left: -13px;
+    }
+    h3 {
+      margin-top: 0;
+      color: #e63946; /* Red heading */
+    }
+    p, li {
+      font-size: 14px;
+      color: #333;
+    }
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    .tools {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .company-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="timeline">
+
+    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+      <div class="timeline-content">
+        <div class="header">
+          <img src="https://via.placeholder.com/40" alt="Company Logo" class="company-logo">
+          <h3>Data Analyst Intern @ XYZ Pvt Ltd</h3>
+        </div>
+        <p>🗓️ Jan 2024 – May 2024</p>
+        <p class="tools">🛠️ Tools: Power BI, Python, SQL</p>
+        <ul>
+          <li>Built Power BI dashboards for sales data analysis</li>
+          <li>Automated data cleaning using Python scripts</li>
+          <li>Reduced reporting time by 30% through insights delivery</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item right wow slideInRight" data-wow-delay="0.3s">
+      <div class="timeline-content">
+        <div class="header">
+          <img src="https://via.placeholder.com/40" alt="Project Logo" class="company-logo">
+          <h3>Olympics Analytics Project</h3>
+        </div>
+        <p>🗓️ 2024</p>
+        <p class="tools">🛠️ Tools: Power BI, Excel, DAX</p>
+        <ul>
+          <li>Designed Paris Olympics Analytics Dashboard</li>
+          <li>Applied DAX formulas for medal tally insights</li>
+          <li>Presented dashboard in class; praised for visuals</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.5s">
+      <div class="timeline-content">
+        <div class="header">
+          <img src="https://via.placeholder.com/40" alt="SQL Logo" class="company-logo">
+          <h3>SQL Case Study: Library Management System</h3>
+        </div>
+        <p>🗓️ 2024</p>
+        <p class="tools">🛠️ Tools: SQL</p>
+        <ul>
+          <li>Wrote 20+ queries to manage library transactions</li>
+          <li>Designed schema for efficient library operations</li>
+          <li>Improved query efficiency by 40%</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+<!--         <div class="experience" id="experience">
             <div class="container">
                 <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>My Resume</p>
@@ -459,7 +624,7 @@
                                 "A Design Executive in a light manufacturing company oversees product design and development, ensuring functionality, aesthetics, and cost-efficiency in production."
                             </p>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                         <div class="timeline-text">
                             <div class="timeline-date">2045 - 2050</div>
@@ -1161,6 +1326,7 @@
         <script src="js/main.js"></script>
     </body>
 </html>
+
 
 
 
