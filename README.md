@@ -97,7 +97,8 @@ Or simply visit the live website:
 
 ## Project Video / Demo
 
-- You can attach:
+- You can watch here:
+- https://www.linkedin.com/posts/pradnilbirje24_dataanalytics-portfolioupdate-dataanalyst-activity-7381230013490167809-2k2a?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbbC14B8NSwU0I8YzkjYcExH_INtUI9SH4
 
 
 ## 👨‍💻 Author
