@@ -2,9 +2,12 @@
 /********* General CSS *********/
 /*******************************/
 body {
-    color: #797979;
-    background: #ffffff;
+    color: #E5E7EB;
+    background: #0B0F14;
     font-family: 'Montserrat', sans-serif;
+    /* color: #797979;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif; */
 }
 
 h1,
