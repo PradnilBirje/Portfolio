@@ -1714,3 +1714,48 @@ body {
   color: #007bff;
   font-weight: bold;
 }
+
+/* ===== DARK ANALYTICS THEME ===== */
+
+body {
+    background: #0B0F14;
+    color: #E5E7EB;
+}
+
+.bg-white {
+    background-color: #0B0F14 !important;
+}
+
+.bg-light {
+    background-color: #11161D !important;
+}
+
+.text-dark {
+    color: #F3F4F6 !important;
+}
+
+.text-secondary {
+    color: #9CA3AF !important;
+}
+
+.card,
+.service-item,
+.portfolio-item {
+    background-color: #11161D !important;
+    border-color: #252B33 !important;
+}
+
+.section-title h1,
+.section-title h2,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #F3F4F6;
+}
+
+p {
+    color: #9CA3AF;
+}
