@@ -1834,3 +1834,33 @@ p {
     min-height: calc(100vh - 78px);
     margin-bottom: 0 !important;
 }
+
+/************************************************/
+/******** HERO BUTTONS — CLEAN DARK THEME *******/
+/************************************************/
+
+.hero .hero-btn .btn {
+    margin-top: 35px;
+    color: #0b0f14 !important;
+    background: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    box-shadow: none !important;
+    border-radius: 4px;
+    padding: 12px 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+.hero .hero-btn .btn:hover {
+    color: #ffffff !important;
+    background: transparent !important;
+    border-color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+/* Space between Resume and LinkedIn */
+.hero .hero-btn .btn:first-child {
+    margin-right: 10px;
+}
