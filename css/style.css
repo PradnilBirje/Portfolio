@@ -1825,3 +1825,12 @@ p {
         color: #d9dde3 !important;
     }
 }
+
+/************************************************/
+/******** FULL-SCREEN HERO SECTION **************/
+/************************************************/
+
+.hero {
+    min-height: calc(100vh - 78px);
+    margin-bottom: 0 !important;
+}
