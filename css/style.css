@@ -295,7 +295,7 @@ a:focus {
 
 .hero .hero-text h2 {
     display: inline-block;
-    margin: 0;
+    margin: 0 0 15px 0;
     height: 35px;
     color: #ffffff;
     font-size: 35px;
