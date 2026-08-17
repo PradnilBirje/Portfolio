@@ -1914,3 +1914,7 @@ p {
         margin-bottom: 35px;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
