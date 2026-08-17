@@ -13,7 +13,9 @@
     
     
     // Initiate the wowjs
-    new WOW().init();
+    // WOW animations disabled for smoother scrolling
+    // new WOW().init();
+   
     
     
     // Back to top button
