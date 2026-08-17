@@ -1864,3 +1864,13 @@ p {
 .hero .hero-btn .btn:first-child {
     margin-right: 10px;
 }
+
+/************************************************/
+/******** MOBILE HERO SPACING *******************/
+/************************************************/
+
+@media (max-width: 767.98px) {
+    .hero .hero-image {
+        margin-bottom: 35px;
+    }
+}
