@@ -777,9 +777,7 @@ section#skills {
 }
 
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 body {
   scroll-padding-top: 100px; /* or match your navbar height */
