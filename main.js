@@ -12,7 +12,7 @@
     loader();
     
     
-    // Initiate the wowjs
+    </> JavaScript
     // WOW animations disabled for smoother scrolling
     // new WOW().init();
    
