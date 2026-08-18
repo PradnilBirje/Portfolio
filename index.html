@@ -160,12 +160,19 @@
                                 </div>
                                 <br>
                                 <div class="skill-name">
-                                    <p>Tableau</p><p>85%</p>
+                                <p>Tableau</p>
+                                <p>85%</p>
                                 </div>
+
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                <br>
+                                    <div class="progress-bar"
+                                         role="progressbar"
+                                         aria-valuenow="85"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100">
+                                    </div>
                                 </div>
+
                                 <br>
                                 <div class="skill-name">
                                     <p>Python</p><p>85%</p>
@@ -201,11 +208,7 @@
   <!-- other sections -->
 
   <!-- SKILLS SECTION START -->
-   <section id="skills" class="skills section-bg" style="scroll-margin-top: 100px;">
-
-<!-- html {
-} -->
-
+<section id="skills" class="skills section-bg" style="scroll-margin-top: 100px;">
 
     <div class="section-title text-center">
       <h2>Skills</h2>
@@ -296,272 +299,114 @@
         
         
          <!-- Experience Start -->
-        <div class="experience" id="experience">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Resume</p>
-                    <h2>Working Experience</h2>
-                </header>
-                <div class="timeline">
-        
+       <!-- Experience Start -->
+<div class="experience" id="experience">
+    <div class="container">
 
+        <header class="section-header text-center">
+            <p>My Resume</p>
+            <h2>Working Experience</h2>
+        </header>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experience Timeline</title>
-  <!-- Animate.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <!-- WOW.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #fff;
-      margin: 0;
-      padding: 0;
-    }
-    .timeline {
-      position: relative;
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 20px;
-    }
-    .timeline::after {
-      content: '';
-      position: absolute;
-      width: 6px;
-      background-color: #e63946; /* Red timeline line */
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      margin-left: -3px;
-      z-index: -1; /* Push behind circles */
-    }
-    .timeline-item {
-      padding: 20px;
-      position: relative;
-      background-color: inherit;
-      width: 50%;
-    }
-    .timeline-item.left {
-      left: 0;
-    }
-    .timeline-item.right {
-      left: 50%;
-    }
-    .timeline-content {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      position: relative;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid #eee;
-    }
-    .timeline-content:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(230,57,70,0.3); /* Red glow */
-    }
-    .timeline-item::after {
-      content: '';
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      right: -13px;
-      background-color: #fff; /* White filled sphere */
-      border: 4px solid #e63946; /* Red border */
-      top: 30px;
-      border-radius: 50%;
-      z-index: 2;
-    }
-    .timeline-item.right::after {
-      left: -13px;
-    }
-    h3 {
-      margin-top: 0;
-      color: #e63946; /* Red heading */
-    }
-    p, li {
-      font-size: 14px;
-      color: #333;
-    }
-    ul {
-      margin: 10px 0;
-      padding-left: 20px;
-    }
-    .tools {
-      font-size: 13px;
-      color: #555;
-      margin-bottom: 10px;
-    }
-    .company-logo {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-right: 10px;
-      vertical-align: middle;
-    }
-    .header {
-      display: flex;
-      align-items: center;
-    }
-  </style>
+        <div class="timeline">
 
+            <!-- Experience 1 -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
 
-  <div class="timeline">
+                    <div class="header">
+                        <img src="img/130365840.png"
+                             alt="Prodigy InfoTech"
+                             class="company-logo">
 
-    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-      <div class="timeline-content">
-        <div class="header">
-          <img src="img/130365840.png" alt="Company Logo" class="company-logo">
-          <h3>Data Science Intern @ Prodigy InfoTech</h3>
-        </div>
-        <p>🗓️ Aug 2025 – Aug 2025</p>
-        <p class="tools">🛠️ Tools: Power BI, Python, SQL</p>
-        <ul>
-          <li>Completed 5 real-world data science projects involving EDA, visualization, ML models, and NLP techniques</li>
-          <li>Analyzed a 3GB+ traffic accident dataset (7.7M+ records) to identify accident hotspots, severity trends, and key contributing factors</li>
-          <li>Built a Decision Tree Classifier to predict customer purchase behavior with optimized accuracy</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="timeline-item right wow slideInRight" data-wow-delay="0.3s">
-      <div class="timeline-content">
-        <div class="header">
-          <img src="img/code_b_logo.jpg" alt="Project Logo" class="company-logo">
-          <h3>Data Science Intern @ Code B</h3>
-        </div>
-        <p>🗓️ Apr 2025 - Jun 2025</p>
-        <p class="tools">🛠️ Tools: Power BI, Excel, DAX</p>
-        <ul>
-          <li>Worked on an end-to-end machine learning project focused on detecting phishing websites.</li>
-          <li>Gainned hands-on experience in data preprocessing, EDA, feature engineering, model training, evaluation, and deployment.</li>
-          <li>Emphasizing model explainability, interpretability, and user accessibility through structured weekly deliverables.</li>
-          <li>Collaborating on documentation, insights reporting, and final presentation of project outcomes</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.5s">
-      <div class="timeline-content">
-        <div class="header">
-          <img src="img/images (3).png" alt="SQL Logo" class="company-logo">
-          <h3>Design Executive @3SDM Business Solutions Pvt. Ltd.</h3>
-        </div>
-        <p>🗓️ Aug 2023 - June 2024</p>
-        <p class="tools">🛠️ Tools: Auto-Cad, Solid-Works</p>
-        <ul>
-          <li>Executed full-cycle lighting designs from ideation to completion, adhering to industry standards & client expectations, resulting in a 25% boost in project approval rates and securing repeat business</li>
-          <li>Manage and inspire a team of lighting designers, guiding their work and fostering a creative and collaborative work environment.</li>
-          <li>Facilitating seamless collaboration between various departments to ensure cohesive project execution and achieve organizational goals effectively.</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-
-<!--         <div class="experience" id="experience">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Resume</p>
-                    <h2>Working Experience</h2>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2025 - 2025</div>
-                            <h2>Data Science Intern</h2>
-                            <h4>Prodigy Infotech</h4>
-                            <p>
-                                Completed a 5-task internship focusing on data cleaning, exploratory data analysis (EDA), machine learning, NLP, and data visualization. Worked with real-world datasets, including a 7.7M+ records, 3GB+ US accidents dataset, achieving 100% task completion. Gained hands-on experience using Python, Pandas, Seaborn, Matplotlib, Folium, and NLP techniques to analyze trends, detect patterns, and create insightful dashboards and visualizations.
-                            </p>
-                        </div>
+                        <h3>Data Science Intern @ Prodigy InfoTech</h3>
                     </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2025 - 2025</div>
-                            <h2>Data Science Intern</h2>
-                            <h4>Code B Solutions Pvt. Ltd</h4>
-                            <p>
-                                Worked on an end-to-end machine learning project focused on detecting phishing 
-                                websites. 
-                                Gainned hands-on experience in data preprocessing, EDA, feature engineering, model training, 
-                                evaluation, and deployment. 
-                                Emphasizing model explainability, interpretability, and user accessibility through structured 
-                                weekly deliverables. 
-                                Collaborating on documentation, insights reporting, and final presentation of project outcomes.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2023 - 2024</div>
-                            <h2>Design Executive</h2>
-                            <h4>3SDM Business solutions Pvt. Ltd.</h4>
-                            <p>
-                                "A Design Executive in a light manufacturing company oversees product design and development, ensuring functionality, aesthetics, and cost-efficiency in production."
-                            </p>
-                        </div>
-                    </div> -->
-                    <!-- <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div> -->
-                    <!-- <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div> -->
-                    <!-- <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div> -->
-                    <!-- <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div> -->
-                    <!-- <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p> -->
-                        </div>
-                    </div>
+
+                    <p>🗓️ Aug 2025 – Aug 2025</p>
+
+                    <p class="tools">
+                        🛠️ Tools: Power BI, Python, SQL
+                    </p>
+
+                    <ul>
+                        <li>Completed 5 real-world data science projects involving EDA, visualization, ML models, and NLP techniques.</li>
+
+                        <li>Analyzed a 3GB+ traffic accident dataset containing 7.7M+ records to identify accident hotspots, severity trends, and contributing factors.</li>
+
+                        <li>Built a Decision Tree Classifier to predict customer purchase behavior.</li>
+                    </ul>
+
                 </div>
             </div>
+
+
+            <!-- Experience 2 -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+
+                    <div class="header">
+                        <img src="img/code_b_logo.jpg"
+                             alt="Code B Solutions"
+                             class="company-logo">
+
+                        <h3>Data Science Intern @ Code B</h3>
+                    </div>
+
+                    <p>🗓️ Apr 2025 – Jun 2025</p>
+
+                    <p class="tools">
+                        🛠️ Tools: Python, Power BI, Excel, DAX
+                    </p>
+
+                    <ul>
+                        <li>Worked on an end-to-end machine learning project focused on detecting phishing websites.</li>
+
+                        <li>Gained hands-on experience in data preprocessing, EDA, feature engineering, model training, evaluation, and deployment.</li>
+
+                        <li>Focused on model explainability, interpretability, and user accessibility.</li>
+
+                        <li>Collaborated on documentation, insights reporting, and final project presentation.</li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <!-- Experience 3 -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+
+                    <div class="header">
+                        <img src="img/images (3).png"
+                             alt="3SDM Business Solutions"
+                             class="company-logo">
+
+                        <h3>Design Executive @ 3SDM Business Solutions Pvt. Ltd.</h3>
+                    </div>
+
+                    <p>🗓️ Aug 2023 – Jun 2024</p>
+
+                    <p class="tools">
+                        🛠️ Tools: AutoCAD, SolidWorks
+                    </p>
+
+                    <ul>
+                        <li>Executed full-cycle lighting designs from ideation to completion while meeting industry standards and client requirements.</li>
+
+                        <li>Contributed to a 25% improvement in project approval rates and supported repeat business.</li>
+
+                        <li>Managed and supported a team of lighting designers.</li>
+
+                        <li>Coordinated with multiple departments to ensure smooth project execution.</li>
+                    </ul>
+
+                </div>
+            </div>
+
         </div>
+    </div>
+</div>
+<!-- Experience End -->
         <!-- Job Experience End -->
          <!-- <br>
          <br>
@@ -577,64 +422,52 @@
         <br>
 
         <!-- Education Start -->
-        <div class="education" id="education">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <!-- <p>My Resume</p> -->
-                    <h2>Education</h2>
-                </header>
+            <!-- Education Start -->
+<div class="education" id="education">
+    <div class="container">
 
-        <!-- <div class="row">
-            <h1 class="big-4">Education</h1>
-            <div class="underline"></div>
-        </div> -->
-        <br>
+        <header class="section-header text-center">
+            <h2>Education</h2>
+        </header>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">2017-2020</span>
-                        <h2>Diploma In Engineering</h2>
-                        <span class="Position">M.S.B.T.E. Board</span>
-                        <p class="mt-4">Grade: First Class Distinction.</p>
+        <div class="row">
+
+            <!-- Diploma -->
+            <div class="col-md-6">
+                <div class="resume-wrap">
+                    <span class="date">2017 – 2020</span>
+                    <h2>Diploma in Engineering</h2>
+                    <span class="position">M.S.B.T.E. Board</span>
+                    <p class="mt-4">Grade: First Class Distinction</p>
                 </div>
             </div>
 
-
-            <br>
-            <br>
-            <br>
-            <br>
-
-            
-            <div calss="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2020-2023</span>
-                    <h2>Bachelor Of Engineering</h2>
+            <!-- Bachelor -->
+            <div class="col-md-6">
+                <div class="resume-wrap">
+                    <span class="date">2020 – 2023</span>
+                    <h2>Bachelor of Engineering</h2>
                     <span class="position">Mumbai University</span>
-                    <p class="mt-4">Grade: First Class Distinction.</p>
+                    <p class="mt-4">Grade: First Class Distinction</p>
                 </div>
             </div>
 
-
-            <br>
-            <br>
-            <br>
-            <br>
-
-
-            <div calss="col-md-6"></div>
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">July 2024-May 2025</span>
-                    <h2>Master In Data Science & Analytics with Artificial Intelligence</h2>
-                    <span class="position">National Skill Devlopment Corporation</span>
+            <!-- Master's / Postgraduate -->
+            <div class="col-md-6">
+                <div class="resume-wrap">
+                    <span class="date">July 2024 – May 2025</span>
+                    <h2>Master in Data Science &amp; Analytics with Artificial Intelligence</h2>
+                    <span class="position">IT Vedant Education Pvt. Ltd.</span>
                     <p class="mt-4">Grade: Pass</p>
                 </div>
             </div>
 
-            
+        </div>
+    </div>
+</div>
+<!-- Education End -->
         
-        
+
         <!-- Banner Start -->
         <!-- <div class="banner wow zoomIn" data-wow-delay="0.1s">
             <div class="container">
