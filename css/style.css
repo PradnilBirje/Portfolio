@@ -1916,7 +1916,7 @@ p {
 html {
 }
 
-/* /* =========================================
+/* =========================================
    PROFESSIONAL SECTION NAVIGATION
    ========================================= */
 
@@ -1935,4 +1935,4 @@ body {
 /* Only the active section is visible */
 .portfolio-section.active-section {
     display: block;
-} */
+}
