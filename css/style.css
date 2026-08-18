@@ -1915,3 +1915,24 @@ p {
 
 html {
 }
+
+/* =========================================
+   PROFESSIONAL SECTION NAVIGATION
+   ========================================= */
+
+/* Prevent the main page from scrolling */
+html,
+body {
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Each portfolio section is hidden by default */
+.portfolio-section {
+    display: none;
+}
+
+/* Only the active section is visible */
+.portfolio-section.active-section {
+    display: block;
+}
