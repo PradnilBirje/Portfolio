@@ -40,21 +40,21 @@
     });
     
     
-    // Smooth scrolling on the navbar links
-    $(".navbar-nav a").on('click', function (event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            
-            $('html, body').animate({
-                scrollTop: $(this.hash).offset().top - 45
-            }, 1500, 'easeInOutExpo');
-            
-            if ($(this).parents('.navbar-nav').length) {
-                $('.navbar-nav .active').removeClass('active');
-                $(this).closest('a').addClass('active');
-            }
+// Instant navigation on navbar links
+$(".navbar-nav a").on('click', function (event) {
+    if (this.hash !== "") {
+        event.preventDefault();
+
+        const target = $(this.hash).offset().top - 45;
+
+        window.scrollTo(0, target);
+
+        if ($(this).parents('.navbar-nav').length) {
+            $('.navbar-nav .active').removeClass('active');
+            $(this).closest('a').addClass('active');
         }
-    });
+    }
+});
 
     
     // Skills
