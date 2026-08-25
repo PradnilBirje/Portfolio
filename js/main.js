@@ -40,19 +40,31 @@
     });
     
     
-// Instant navigation on navbar links
+// Professional instant navigation with short loading transition
 $(".navbar-nav a").on('click', function (event) {
     if (this.hash !== "") {
         event.preventDefault();
 
         const target = $(this.hash).offset().top - 45;
 
-        window.scrollTo(0, target);
+        // Show loading indicator
+        $('#page-transition').addClass('show');
 
+        // Update active navigation item
         if ($(this).parents('.navbar-nav').length) {
             $('.navbar-nav .active').removeClass('active');
             $(this).closest('a').addClass('active');
         }
+
+        // Short professional transition
+        setTimeout(function () {
+            window.scrollTo(0, target);
+
+            setTimeout(function () {
+                $('#page-transition').removeClass('show');
+            }, 150);
+
+        }, 250);
     }
 });
 

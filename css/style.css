@@ -285,37 +285,65 @@ a:focus {
 .hero {
     position: relative;
     width: 100%;
-    margin-bottom: 45px;
-    padding: 120px 0 0 0;
+    margin-bottom: 0px;
     overflow: hidden;
     background: #0B0F14;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    /* NEW RULES: Makes the section stretch top-to-bottom on the monitor screen */
+    min-height: calc(100vh - 78px); 
+    display: flex;
+    align-items: center;
 }
 
 .hero .container-fluid {
-    padding: 0;
+    padding: 0 8%; /* Adds an 8% clean margin space on the very left and right edges */
+}
+
+/* NEW FLEX GRID: Pushes text to the left side and photo to the right side seamlessly */
+.hero .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero .hero-content {
+    position: relative;
+    padding-left: 0px; /* Cleans up old offset spacing */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;  /* Uniform left alignment */
+}
+
+/* Adds breathing room between your Name, Designation, and Paragraph metrics */
+.hero .hero-text h1 {
+    margin-bottom: 8px !important;
+}
+
+.hero .hero-text h2 {
+    margin-bottom: 24px !important; 
+}
+
+.hero .hero-text p {
+    line-height: 1.6; /* Makes your billions in profit statements easy to scan */
+    max-width: 90%;   /* Keeps paragraph lines crisp instead of spreading full width */
 }
 
 .hero .hero-image {
     position: relative;
     text-align: right;
-    padding-right: 75px;
+    padding-right: 0px; /* Removes old cramped padding */
 }
 
 .hero .hero-image img {
-    max-width: 80%;
-    max-height: 80%;
-}
-
-.hero .hero-content {
-    position: relative;
-    padding-left: 75px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+    max-width: 90%;
+    max-height: 85vh; /* Prevents your avatar from growing larger than the viewport height */
+    object-fit: contain;
 }
 
 .hero .hero-text p {
