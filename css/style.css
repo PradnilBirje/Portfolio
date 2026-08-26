@@ -1885,3 +1885,87 @@ a.btn {
     color: #FFFFFF !important;
 }
 
+/* ===== COMPLETE PORTFOLIO GRID CORPORATE RESCUE ===== */
+
+/* Changes the active selected tag button to professional blue */
+.portfolio #portfolio-filter li,
+.portfolio #portfolio-filter li.filter-active {
+    background: #0284C7 !important;
+    background-color: #0284C7 !important;
+    box-shadow: none !important;
+    border-color: #0284C7 !important;
+    color: #FFFFFF !important;
+}
+
+/* Changes the hover states of all filter tags to matching blue */
+.portfolio #portfolio-filter li:hover {
+    background: #0077B6 !important;
+    background-color: #0077B6 !important;
+    border-color: #0077B6 !important;
+    color: #FFFFFF !important;
+}
+
+/* Fixes any remaining default red borders/lines in headers */
+.section-header p::before,
+.section-header p::after {
+    background: #0284C7 !important;
+}
+
+/* Changes the text link highlight colors from red to professional teal blue */
+a:hover,
+a:active,
+a:focus {
+    color: #0284C7 !important;
+}
+
+/* ===== CONTACT & FOOTER CORPORATE EXTENSION ===== */
+
+/* Shifts the contact layout background from red to deep slate grey */
+.contact, 
+.contact .contact-form {
+    background: #1E293B !important; 
+    background-color: #1E293B !important;
+}
+
+/* Forces contact inputs to blend neatly with the slate background */
+.contact .contact-form input,
+.contact .contact-form textarea {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #FFFFFF !important;
+}
+
+/* Changes your contact button to your corporate action blue */
+.contact .contact-form .btn {
+    background: #0284C7 !important;
+    background-color: #0284C7 !important;
+    border-color: #0284C7 !important;
+    color: #FFFFFF !important;
+    box-shadow: none !important;
+}
+
+.contact .contact-form .btn:hover {
+    background: transparent !important;
+    color: #0284C7 !important;
+    border-color: #0284C7 !important;
+}
+
+/* Shifts your footer container background from red to professional charcoal */
+.footer {
+    background: #0F172A !important;
+    background-color: #0F172A !important;
+    border-top: 1px solid #1E293B !important;
+}
+
+.footer .footer-info h2,
+.footer .footer-info h3,
+.footer .footer-menu p,
+.footer .footer-social a i,
+.footer .copyright p,
+.footer .copyright p a {
+    color: #94A3B8 !important; /* Polished crisp silver-slate footer font text */
+}
+
+.footer .footer-social a:hover i,
+.footer .copyright p a:hover {
+    color: #FFFFFF !important; /* Brighter white highlight when hovered */
+}
