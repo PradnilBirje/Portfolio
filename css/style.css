@@ -2172,4 +2172,84 @@ a:focus {
 /* DAX HIGHLIGHTER ADDITIONS */
 .token-string { color: #A5F3FC; } /* Clean cyan color rule for DAX table references */
 
+/* ===== MOBILE CORES BREAKPOINT CORRECTIONS ===== */
 
+@media (max-width: 768px) {
+    /* 1. RESTORE TERMINAL VISIBILITY ON MOBILE */
+    .hero-visual-container {
+        display: block !important; /* Forces the box to be visible on phone layouts */
+        width: 100% !important;
+        margin-top: 40px !important; /* Adds clean breathing space below your Resume buttons */
+        padding: 0 15px !important;
+    }
+
+    .analytics-terminal-box {
+        max-width: 100% !important; /* Lets the terminal fit full-width on phone screens */
+        margin-left: 0 !important;
+    }
+    
+    .metric-value {
+        font-size: 1.35rem !important; /* Scales down metric font size for phone displays */
+    }
+
+    /* 2. FORCE HAMBURGER ICON BUTTON LINES TO BLACK */
+    .navbar-toggler {
+        border: 1px solid #0F172A !important; /* Dark corporate outline button */
+        background-color: transparent !important;
+    }
+
+    /* Forces the native three lines inside the icon to turn sharp corporate slate black */
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://w3.org stroke='rgba(15, 23, 42, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+    }
+}
+
+/* ===== STACKED PURE CSS 3-HORIZONTAL-LINE HAMBURGER RESCUE ===== */
+@media (max-width: 768px) {
+    /* Formats your outer corporate black button box frame */
+    .navbar-toggler {
+        border: 2px solid #0F172A !important; 
+        background-color: transparent !important;
+        padding: 8px 10px !important;
+        border-radius: 6px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 36px !important;
+        width: 44px !important;
+    }
+
+    /* Target the inner icon to construct your 3 solid lines manually */
+    .navbar-toggler-icon {
+        background-image: none !important; /* Completely wipes out the broken template image background link */
+        width: 22px !important;
+        height: 2px !important; /* This acts as your MIDDLE horizontal line */
+        background-color: #0F172A !important; 
+        display: block !important;
+        position: relative !important;
+    }
+
+    /* Draws your TOP horizontal line */
+    .navbar-toggler-icon::before {
+        content: "" !important;
+        position: absolute !important;
+        top: -7px !important; /* Spaces line perfectly upward */
+        left: 0 !important;
+        width: 22px !important;
+        height: 2px !important;
+        background-color: #0F172A !important;
+        display: block !important;
+    }
+
+    /* Draws your BOTTOM horizontal line */
+    .navbar-toggler-icon::after {
+        content: "" !important;
+        position: absolute !important;
+        bottom: -7px !important; /* Spaces line perfectly downward */
+        left: 0 !important;
+        width: 22px !important;
+        height: 2px !important;
+        background-color: #0F172A !important;
+        display: block !important;
+    }
+}
