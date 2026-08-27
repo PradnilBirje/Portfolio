@@ -29,160 +29,144 @@
     <body>
     
         <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <!-- RESPONSIVE PROFESSIONAL NAVBAR -->
+        <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">Analyst Folio</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <!-- Logo / Brand Name -->
+                <a class="navbar-brand" href="index.html" style="font-weight: 700; font-size: 1.5rem; color: #0F172A;">Analyst Folio</a>
+        
+                <!-- Mobile Hamburger Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobileMenu" aria-controls="navbarMobileMenu" aria-expanded="false" aria-label="Toggle navigation" style="border: none; padding: 4px;">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
+                <!-- The Menu Links Links Container -->
+                <div class="collapse navbar-collapse" id="navbarMobileMenu">
+                    <div class="navbar-nav ml-auto" style="gap: 15px; padding-top: 5px;">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About & Skills</a>
                         <a href="portfolio.html" class="nav-item nav-link">Case Studies</a>
                         <a href="experience.html" class="nav-item nav-link">Background</a>
                         <a href="blog.html" class="nav-item nav-link">Blog</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
             </div>
         </div>
+    </div>
+</nav>
         <!-- Nav Bar End -->
 
 
         <!-- Hero Start -->
-        <div class="hero" id="home">
+        <!-- SPLIT CORES GRID RECOVERY -->
+                <!-- Hero Start -->
+        <!-- SPLIT CORES GRID RECOVERY -->
+        <section class="hero" id="home">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6 order-2 order-md-1">
-                        <div class="hero-content">
-                            <div class="hero-text">
-
-                                <p class="hero-eyebrow"></p>
-
-                                <h1>Pradnil Birje</h1>
-
-                                <h2>Data Analyst</h2>
-
-                                <p class="hero-description">
-                                    
-                                    I analyze $8.34B in sales and $4.79B in profit. 
-                                    Building SQL, Power BI, and Python 
-                                    solutions that uncover what drives business performance.
-                                    
-                                </p>
-
-                                </div>
-                            
-                            <div class="hero-btn">
-                                <a class="btn" href="resume/Pradnil_Birje_Data_Analyst_Resume.pdf">Resume</a>
-                                <a class="btn" href="https://www.linkedin.com/in/pradnilbirje24" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                            </div>
+            
+                    <!-- LEFT COLUMN: Your Text (Width 55%) -->
+                    <div class="col-md-7 hero-content">
+                        <h1>Pradnil Birje</h1>
+                        <h2>Data Analyst </h2>
+                        <p>
+                        I analyze $8.34B in sales and $4.79B in profit.  
+                        Building SQL, Power BI, Excel, and Python solutions 
+                        that uncover what drives business performance.
+                        </p>
+                        <div class="hero-btn">
+                            <a href="resume.pdf" class="btn" target="_blank">View Resume</a>
+                            <a href="https://linkedin.com" class="btn" target="_blank">LinkedIn</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Hero End -->
+
+                    <!-- RIGHT COLUMN: The Live DAX Engine Terminal Component -->
+                    <div class="col-md-5 hero-visual-container d-none d-md-block">
+                        <div class="analytics-terminal-box">
+                            <div class="terminal-header">
+                                <span class="dot-red"></span>
+                                <span class="dot-yellow"></span>
+                                <span class="dot-green"></span>
+                                <span class="terminal-title">revenue_intelligence.dax</span>
+                            </div>
+                            <div class="terminal-body">
+                                <!-- REAL DAX SYNTAX HIGHLIGHTING -->
+                                <p class="code-line" style="line-height: 1.5; margin-bottom: 20px !important;">
+                                    <span class="token-keyword">Total Sales</span> = <br>
+                                    &nbsp;&nbsp;<span class="token-function">CALCULATE</span>(<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="token-function">SUM</span>(<span class="token-string">'Fact_Sales'[Gross_Amount]</span>)<br>
+                                    &nbsp;&nbsp;)
+                                </p>
+                    
+                                <div class="metric-display">
+                                    <span class="metric-label">DAX MEASURE OUTPUT (SALES):</span>
+                                    <h3 class="metric-value">$8,340,000,000+</h3>
+                                </div>
+                                <div class="metric-display">
+                                    <span class="metric-label">DAX MEASURE OUTPUT (PROFIT):</span>
+                                    <h3 class="metric-value text-teal">$4,790,000,000</h3>
+                                </div>
+                                <div class="pipeline-status">
+                                    <span class="status-indicator"></span> 
+                                    <span class="status-text">Engine: Power BI / Star Schema Active</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Closes col-md-5 -->
+                    
+                </div> <!-- CORRECTED: Closes the .row grid layout cleanly -->
+            </div> <!-- CORRECTED: Closes the .container-fluid cleanly -->
+        </section> <!-- Hero End -->
 
 
-<br>
-<br>
-<br>
+
+
+
 
 
 
         <!-- About Start -->
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="img/pradnil_birje_about.png" alt="About Image">
-                        </div>
+        <!-- MAIN BODY: ABOUT SUMMARY -->
+        <section class="about-page-section" style="padding: 80px 0; background: #F8F9FA;">
+            <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
+                <h2 style="font-size: 2.5rem; color: #0F172A; margin-bottom: 24px; font-weight: 700;">About Me</h2>
+                <p style="font-size: 1.15rem; line-height: 1.7; color: #475569; margin-bottom: 40px;">
+                    I am an aspiring Data Analyst committed to building clean, high-integrity analytical environments. 
+                    Rather than treating data as just numbers, I treat datasets like enterprise operational tools. 
+                    My focus centers on mastering advanced database mechanics, executing rigorous exploratory data cleaning, 
+                    and translating messy relational inputs into pristine visual metrics that guide corporate decision-making.
+            </p>
+
+            <hr style="border: 0; border-top: 1px solid #E2E8F0; margin-bottom: 40px;">
+
+            <!-- TECHNICAL STACK MAP -->
+            <h2 style="font-size: 2.2rem; color: #0F172A; margin-bottom: 24px; font-weight: 700;">Technical Infrastructure Stack</h2>
+            
+            <div class="skills-container" style="display: grid; grid-template-columns: 1fr; gap: 24px;">
+                
+                <div class="skill-group-card" style="background: #FFFFFF; padding: 24px; border: 1px solid #E2E8F0; border-radius: 8px;">
+                        <h3 style="color: #0284C7; font-size: 1.3rem; margin-bottom: 12px; font-weight: 600;">1. Data Extraction & Pipeline Architecture</h3>
+                        <p style="color: #334155; font-size: 1.05rem; line-height: 1.6;">
+                            <strong>SQL (Advanced Core):</strong> Writing optimized queries using Common Table Expressions (CTEs), multi-table Joins, Subqueries, and Window Functions. Designing relational models using structured Star Schema database configurations.
+                        </p>
                     </div>
 
-                    <br>
-                    <br>
-                    
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <div class="section-header text-left">
-                                <br>
-                                <br>
-                                <p>Learn About Me</p>
-                                <p>Name: </span> <span>Pradnil Birje</span></p>
-                                <p>Job Role: </span> <span>Data Analyst</span></p>
-                                <!-- <p>Experience: </span> <span>Fresher</span></p> -->
-                                <p>Address: </span> <span>Mumbai, India</span></p>
-                                <!-- <h2>10 Years Experience</h2> -->
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                        Hello, I'm Pradnil Birje. A passionate and enthusiastic Data Analyst with a fresh perspective and a strong foundation in data science. I recently completed my post-graduate course which is master in data Science & analytics with AI, and I am excited to dive into the world of data analytics. 
-                                I thrive on turning raw data into actionable insights that drive decision-making and solve real-world problems.
-                                    With a background in Engineering, statistics & data visualization, I have hands-on experience with tools like Python, SQL, and Excel. I enjoy exploring data patterns, uncovering trends, and creating visual stories that make complex information accessible to everyone.
-                                I’m always eager to learn and grow, and I look forward to contributing to impactful projects. Let's connect and explore how we can transform data into meaningful solutions together!
-                                </p>
-                            </div>
-                            <div class="skills">
-                                <div class="skill-name">
-                                    <p>SQL For Data science</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <br>
-                                <div class="skill-name">
-                                    <p>Advanced Excel</p><p>95%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <br>
-                                <div class="skill-name">
-                                    <p>Power BI</p><p>90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <br>
-                                <div class="skill-name">
-                                <p>Tableau</p>
-                                <p>85%</p>
-                                </div>
-
-                                <div class="progress">
-                                    <div class="progress-bar"
-                                         role="progressbar"
-                                         aria-valuenow="85"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100">
-                                    </div>
-                                </div>
-
-                                <br>
-                                <div class="skill-name">
-                                    <p>Python</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <br>
-                                <div class="skill-name">
-                                    <p>Machine Learning</p><p>90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <!-- <a class="btn" href="">Learn More</a> -->
-                        </div>
+                <div class="skill-group-card" style="background: #FFFFFF; padding: 24px; border: 1px solid #E2E8F0; border-radius: 8px;">
+                        <h3 style="color: #0284C7; font-size: 1.3rem; margin-bottom: 12px; font-weight: 600;">2. Analytics Engineering & Automation</h3>
+                        <p style="color: #334155; font-size: 1.05rem; line-height: 1.6;">
+                            <strong>Python Ecosystem:</strong> Programmatic data wrangling and manipulation utilizing Pandas and NumPy. Conducting Exploratory Data Analysis (EDA) to locate patterns, handle anomalous null-value vectors, and format messy date-stamps.
+                        </p>
                     </div>
-                </div>
+
+                <div class="skill-group-card" style="background: #FFFFFF; padding: 24px; border: 1px solid #E2E8F0; border-radius: 8px;">
+                        <h3 style="color: #0284C7; font-size: 1.3rem; margin-bottom: 12px; font-weight: 600;">3. Visual Business Intelligence</h3>
+                        <p style="color: #334155; font-size: 1.05rem; line-height: 1.6;">
+                            <strong>Power BI & Tableau:</strong> Engineering dynamic KPI tracking logic via advanced Data Analysis Expressions (DAX). Constructing highly scannable reporting layers that highlight margins, growth indicators, and core sales anomalies cleanly.
+                        </p>
+                    </div>
+
             </div>
         </div>
+    </section>
         <!-- About End -->
         
         

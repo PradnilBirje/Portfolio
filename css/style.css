@@ -1969,3 +1969,207 @@ a:focus {
 .footer .copyright p a:hover {
     color: #FFFFFF !important; /* Brighter white highlight when hovered */
 }
+
+/* ===== HOMEPAGE & MOBILE RESPONSIVE OPTIMIZATION ===== */
+
+/* Desktop & Laptop Master Alignment Fixes */
+.hero {
+    padding: 100px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: calc(100vh - 80px) !important;
+}
+
+.hero .hero-content {
+    max-width: 850px !important;
+    margin: 0 auto !important;
+    text-align: left !important;
+}
+
+/* Fluid Typography and Spacing for Main Hero Text */
+.hero .hero-content h1 {
+    font-size: 3.8rem !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+    color: #0F172A !important;
+    margin-bottom: 12px !important;
+    letter-spacing: -0.02em !important;
+}
+
+.hero .hero-content h2 {
+    font-size: 1.8rem !important;
+    font-weight: 600 !important;
+    color: #0284C7 !important;
+    margin-bottom: 28px !important;
+}
+
+.hero .hero-content p {
+    font-size: 1.2rem !important;
+    line-height: 1.7 !important;
+    color: #475569 !important;
+    margin-bottom: 36px !important;
+}
+
+/* MOBILE SCREEN BREAKPOINT OVERRIDES (Screens smaller than 768px wide) */
+@media (max-width: 768px) {
+    /* Tightens universal spacing for mobile fingers */
+    .hero {
+        padding: 60px 24px !important;
+        min-height: auto !important;
+    }
+
+    /* Scales down text sizes so sentences don't clip or overlap on small screens */
+    .hero .hero-content h1 {
+        font-size: 2.3rem !important; /* Smaller, punchy font size for phone displays */
+        margin-bottom: 8px !important;
+    }
+
+    .hero .hero-content h2 {
+        font-size: 1.3rem !important;
+        margin-bottom: 18px !important;
+    }
+
+    .hero .hero-content p {
+        font-size: 1.05rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 28px !important;
+    }
+
+    /* Stack buttons vertically on mobile screens so they are easy to press */
+    .hero .hero-btn {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 12px !important;
+    }
+
+    .hero .hero-btn .btn {
+        width: 100% !important; /* Forces buttons to span full mobile width uniformly */
+        text-align: center !important;
+        padding: 14px 20px !important;
+    }
+    
+    /* Clean up navigation menu container layout for phone view drop-downs */
+    .navbar {
+        padding: 12px 24px !important;
+    }
+    
+    .navbar-links-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        margin-top: 12px;
+    }
+}
+
+/* ===== DATA ANALYTICS HERO TERMINAL COMPONENT ===== */
+
+.analytics-terminal-box {
+    background: #0F172A !important; /* Deep charcoal dark look for terminal backdrop contrast */
+    border: 1px solid #1E293B !important;
+    border-radius: 10px !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    padding: 20px !important;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    max-width: 440px;
+    margin-left: auto;
+}
+
+/* Simulated terminal top action control circle buttons */
+.terminal-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 1px solid #1E293B;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.terminal-header span[class^="dot-"] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-red { background: #EF4444; }
+.dot-yellow { background: #F59E0B; }
+.dot-green { background: #10B981; }
+
+.terminal-title {
+    color: #94A3B8;
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+
+/* SQL Code String Highlighter Tokens */
+.code-line {
+    color: #E2E8F0;
+    font-size: 0.9rem;
+    margin-bottom: 24px !important;
+}
+.token-keyword { color: #38BDF8; font-weight: bold; }
+.token-function { color: #F43F5E; }
+
+/* Metrics Panels Inside Terminal Component Wrapper */
+.metric-display {
+    background: #1E293B;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+
+.metric-label {
+    color: #64748B;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.metric-value {
+    color: #F8FAFC !important;
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+}
+
+.metric-value.text-teal {
+    color: #38BDF8 !important; /* Standout blue accent color rule for metrics values */
+}
+
+/* Active Status Line indicator tag metrics */
+.pipeline-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    background: #10B981;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+.status-text {
+    color: #64748B;
+    font-size: 0.8rem;
+}
+
+/* Hidden container behavior constraint settings on mobile views */
+@media (max-width: 768px) {
+    .hero-visual-container {
+        display: none !important; /* Hides terminal box cleanly on mobile screens to preserve text reading focus */
+    }
+}
+
+/* DAX HIGHLIGHTER ADDITIONS */
+.token-string { color: #A5F3FC; } /* Clean cyan color rule for DAX table references */
+
+
