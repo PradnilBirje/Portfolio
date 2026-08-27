@@ -2253,3 +2253,49 @@ a:focus {
         display: block !important;
     }
 }
+
+/* ===== MOBILE TERMINAL OVERFLOW COMPRESSION ===== */
+@media (max-width: 768px) {
+    /* Forces the text lines and code string variables to wrap naturally within small screens */
+    .terminal-title,
+    .code-line,
+    .analytics-terminal-box p {
+        word-break: break-all !important;
+        white-space: normal !important;
+        font-size: 0.8rem !important; /* Dynamically scales the code text down for better phone scanning */
+    }
+
+    /* Adjusts code spacing so it stays completely tucked inside your terminal box margins */
+    .analytics-terminal-box {
+        padding: 12px !important;
+        overflow: hidden !important;
+    }
+}
+
+/* ===== HARRISON-STYLE NAV BAR INITIALS EMBLEM ===== */
+.brand-square-logo {
+    background-color: #0284C7 !important; /* Perfect solid corporate blue square backdrop */
+    color: #FFFFFF !important;            /* Crisp visible white initials text */
+    font-size: 1.05rem !important;
+    font-weight: 800 !important;          /* Bold typography presence */
+    font-family: 'Montserrat', sans-serif !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 36px !important;               /* Uniform square dimensions tracking height coordinates */
+    height: 36px !important;
+    border-radius: 8px !important;        /* Clean, subtle architectural corner smoothing curve radius */
+    text-transform: uppercase !important;
+    letter-spacing: 0px !important;
+    flex-shrink: 0 !important;            /* Prevents the block square element from warping or squeezing */
+}
+
+/* Micro alignment check configuration adjustments for mobile smartphone screens */
+@media (max-width: 768px) {
+    .brand-square-logo {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 0.95rem !important;
+        border-radius: 6px !important;
+    }
+}
