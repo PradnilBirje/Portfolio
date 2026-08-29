@@ -2340,3 +2340,38 @@ a:focus {
     color: #F8FAFC !important;     /* Brilliant stark white details text for perfect readability */
     font-weight: 500 !important;
 }
+
+/* ===== MOBILE SCREEN GRID SQUEEZE RESCUE ===== */
+@media (max-width: 768px) {
+    /* 1. Expand the fluid container area and add clean outer spacing buffers */
+    .hero .container-fluid,
+    .navbar .container-fluid {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* 2. Prevent row elements from causing overlapping or narrow margins */
+    .hero .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important; /* Forces vertical stacking on mobile screens */
+    }
+
+    /* 3. Give the live analytics terminal engine box its full reading space */
+    .hero-visual-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+    }
+
+    .analytics-terminal-box {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 24px 0 0 0 !important; /* Adds a uniform gap under your LinkedIn button */
+    }
+}
+
