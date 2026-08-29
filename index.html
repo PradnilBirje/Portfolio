@@ -88,42 +88,61 @@
                         </div>
                     </div>
 
-                    <!-- RIGHT COLUMN: The Live DAX Engine Terminal Component -->
-                    <div class="col-md-5 hero-visual-container">
-                        <div class="analytics-terminal-box">
-                            <div class="terminal-header">
-                                <span class="dot-red"></span>
-                                <span class="dot-yellow"></span>
-                                <span class="dot-green"></span>
-                                <span class="terminal-title">revenue_intelligence.dax</span>
-                            </div>
-                            <div class="terminal-body">
-                                <!-- REAL DAX SYNTAX HIGHLIGHTING -->
-                                <p class="code-line" style="line-height: 1.5; margin-bottom: 20px !important;">
-                                    <span class="token-keyword">Total Sales</span> = <br>
-                                    &nbsp;&nbsp;<span class="token-function">CALCULATE</span>(<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="token-function">SUM</span>(<span class="token-string">'Fact_Sales'[Gross_Amount]</span>)<br>
-                                    &nbsp;&nbsp;)
-                                </p>
-                    
-                                <div class="metric-display">
-                                    <span class="metric-label">DAX MEASURE OUTPUT (SALES):</span>
-                                    <h3 class="metric-value">$8,340,000,000+</h3>
-                                </div>
-                                <div class="metric-display">
-                                    <span class="metric-label">DAX MEASURE OUTPUT (PROFIT):</span>
-                                    <h3 class="metric-value text-teal">$4,790,000,000</h3>
-                                </div>
-                                <div class="pipeline-status">
-                                    <span class="status-indicator"></span> 
-                                    <span class="status-text">Engine: Power BI / Star Schema Active</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- Closes col-md-5 -->
-                    
-                </div> <!-- CORRECTED: Closes the .row grid layout cleanly -->
-            </div> <!-- CORRECTED: Closes the .container-fluid cleanly -->
+                    <!-- RIGHT COLUMN: THE LIVE ANALYTICS ARCHITECTURE ENGINE -->
+<div class="col-md-5 hero-visual-container d-none d-md-block">
+    <div class="analytics-terminal-box framework-card">
+        <div class="terminal-header">
+            <span class="dot-red"></span>
+            <span class="dot-yellow"></span>
+            <span class="dot-green"></span>
+            <span class="terminal-title">pradnil_analytical_framework.sh</span>
+        </div>
+        <div class="terminal-body framework-body">
+            
+            <!-- PIPELINE ENGINE: RUNNING VISUAL LAYERS -->
+            <div class="pipeline-flow-container">
+                <div class="flow-node active-pulse" id="node-1">
+                    <span class="node-step">01. ASK & PREPARE</span>
+                    <p class="node-details">Defining business scope. Structuring relational Star Schemas.</p>
+                </div>
+                <div class="flow-arrow" id="arrow-1"></div>
+                <div class="flow-node" id="node-2">
+                    <span class="node-step">02. PROCESS & ANALYZE</span>
+                    <p class="node-details">Python EDA. Writing optimized SQL CTEs & window functions.</p>
+                </div>
+                <div class="flow-arrow" id="arrow-2"></div>
+                <div class="flow-node" id="node-3">
+                    <span class="node-step">03. SHARE & ACT</span>
+                    <p class="node-details">Engineering high-utility DAX measures inside Power BI layouts.</p>
+                </div>
+            </div>
+
+            <!-- NEW: LIVE DATA MONITOR CONSOLE OUTPUT -->
+            <div style="background: #090D16; border: 1px solid #1E293B; border-radius: 6px; padding: 12px; font-family: 'Courier New', monospace; min-height: 54px; margin-top: 5px;">
+                <span style="color: #64748B; font-size: 0.7rem; font-weight: 700; display: block; margin-bottom: 4px;">LIVE DATA MONITOR STREAM:</span>
+                <p id="live-terminal-stream" style="color: #34D399; font-size: 0.85rem; margin: 0; font-weight: 600;">$ bash executing_pipeline.sh...</p>
+            </div>
+
+            <!-- CORE USP METRIC DISPLAY -->
+            <div class="usp-badge-panel">
+                <div class="usp-metric-row">
+                    <span class="usp-label">ENGINE PHILOSOPHY:</span>
+                    <span class="usp-value text-blue">QUALITY &gt; QUANTITY</span>
+                </div>
+                <div class="usp-metric-row">
+                    <span class="usp-label">PIPELINE INTEGRITY:</span>
+                    <span class="usp-value text-emerald">100% DEPTH RESOLUTION</span>
+                </div>
+            </div>
+
+            <div class="pipeline-status">
+                <span class="status-indicator processing-pulse"></span> 
+                <span class="status-text">Framework Engine: Active Analytics Stream</span>
+            </div>
+        </div>
+    </div>
+</div>
+
         </section> <!-- Hero End -->
 
 

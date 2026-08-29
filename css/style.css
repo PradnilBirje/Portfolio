@@ -2299,3 +2299,44 @@ a:focus {
         border-radius: 6px !important;
     }
 }
+
+/* ===== HIGH-CONTRAST TERMINAL TYPOGRAPHY POLISH ===== */
+
+.flow-node {
+    border: 1px solid #1E293B !important;
+    background: #090D16 !important; /* Slightly darker default layer for rich depth perception */
+    opacity: 0.65 !important;       /* INCREASES VISIBILITY: Keeps inactive words easily readable */
+    transition: all 0.4s ease-in-out !important;
+}
+
+/* Inactive Text Elements Styling - Readable Slate */
+.flow-node .node-step {
+    color: #475569 !important; /* Muted corporate blue-slate for standby blocks */
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+}
+
+.flow-node .node-details {
+    color: #64748B !important; /* Soft legible text for standby details */
+    font-size: 0.85rem !important;
+}
+
+/* ACTIVE HIGHLIGHT STATE: Forces maximum visual contrast when data streams through */
+.flow-node.active-pulse {
+    border-color: #0284C7 !important;
+    background: #1E293B !important; /* Lighter slate blue canvas for the processing card */
+    box-shadow: 0 0 15px rgba(2, 132, 199, 0.3) !important;
+    opacity: 1 !important;
+    transform: scale(1.02);        /* Tiny visual pop effect to show live activity */
+}
+
+/* Turns active words brilliant, crisp colors */
+.flow-node.active-pulse .node-step {
+    color: #38BDF8 !important;     /* Bright neon corporate blue highlight */
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.3);
+}
+
+.flow-node.active-pulse .node-details {
+    color: #F8FAFC !important;     /* Brilliant stark white details text for perfect readability */
+    font-weight: 500 !important;
+}
