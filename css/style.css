@@ -2375,3 +2375,213 @@ a:focus {
     }
 }
 
+/* ==========================================================================
+   PRADNIL'S PORTFOLIO ABOUT SECTION RESCUE (HARRISON STYLE)
+   ========================================================================== */
+
+/* 1. Global Link Accent & Hover Fixes - Wipes out random red line styles */
+.about a,
+.about-content-box a,
+.about-button-group a,
+.about-button-group .btn {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+/* 2. Image Layout Optimization */
+.about-img-container {
+    padding: 15px;
+}
+
+.portfolio-avatar {
+    max-width: 100%;
+    width: 320px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+/* Social link alignment below profile display avatar */
+.about-social-icons a {
+    font-size: 18px;
+    color: #475569 !important;
+    margin: 0 12px;
+    transition: color 0.3s ease;
+}
+
+.about-social-icons a:hover {
+    color: #0284C7 !important; /* Polished brand blue highlight instead of red */
+}
+
+/* 3. Typography Copy Spacing Rules */
+.about-content-box {
+    padding: 0 20px;
+}
+
+.bio-para {
+    font-size: 1.05rem !important;
+    line-height: 1.75 !important;
+    color: #475569 !important; /* Slate grey corporate executive text theme readability */
+    margin-bottom: 20px !important;
+}
+
+.bio-para strong {
+    color: #0F172A;
+    font-weight: 700;
+}
+
+/* 4. Large, Clean Uniform Buttons Fix (Harrison Style) */
+.about-button-group {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 16px !important;
+    margin-top: 32px !important;
+}
+
+/* Standard Base Custom Corporate Button Layout overrides */
+.btn-corporate-large {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 14px 32px !important; /* Big premium button padding dimension coordinates */
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    border-radius: 8px !important; /* Smooth clean geometric curved profile radius corners */
+    text-transform: none !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: pointer !important;
+    height: 52px !important; /* Forces uniform height alignment bounding boxes match */
+    
+    /* Primary Action Style State Setting Base Rules */
+    background-color: #0284C7 !important; 
+    border: 2px solid #0284C7 !important;
+    color: #FFFFFF !important;
+}
+
+/* Clean hover behavior without unexpected underline/outline red shifting colors */
+.btn-corporate-large:hover {
+    background-color: #0369a1 !important; /* Smooth professional deep corporate accent focus */
+    border-color: #0369a1 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+}
+
+/* Secondary Button Style Variation Rules */
+.btn-corporate-large.btn-outline {
+    background-color: transparent !important;
+    border: 2px solid #E2E8F0 !important;
+    color: #475569 !important;
+}
+
+.btn-corporate-large.btn-outline:hover {
+    background-color: #F8FAFC !important;
+    border-color: #94A3B8 !important;
+    color: #0F172A !important;
+    transform: translateY(-2px);
+}
+
+/* 5. Mobile Layout Breakpoint Adjustments (Screens smaller than 768px wide) */
+@media (max-width: 768px) {
+    .about-button-group {
+        flex-direction: column !important; /* Stacks button cells sequentially downward for easy tapping */
+        width: 100% !important;
+        gap: 12px !important;
+    }
+
+    .btn-corporate-large {
+        width: 100% !important; /* Stretches buttons full layout view frame boundaries safely */
+    }
+    
+    .portfolio-avatar {
+        width: 260px; /* Compress image boundaries gracefully to fit smartphone screen sizes */
+    }
+    
+    .about-content-box {
+        padding: 0px;
+    }
+}
+
+/* ==========================================================================
+   HARRISON-STYLE LARGE SOCIAL BUTTON GRID (CORPORATE EDITION)
+   ========================================================================== */
+
+/* Container aligning the row under your profile avatar photo */
+.profile-social-grid {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 14px !important; /* Premium balanced gaps between boxes */
+    margin-top: 20px !important; /* Breathing room directly below your photo */
+    width: 100% !important;
+}
+
+/* Base Configuration for the Large Rounded Square Social Blocks */
+.profile-social-grid .social-box {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    /* Dimension Mapping: Clean big canvas blocks match Harrison's look */
+    width: 54px !important;
+    height: 52px !important;
+    
+    /* Soft Geometric Corner Profiles */
+    border-radius: 12px !important; 
+    font-size: 20px !important; /* Makes icons sharp and easy to scan */
+    text-decoration: none !important;
+    border-bottom: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    
+    /* Smooth CSS Acceleration Physics on Focus */
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: pointer !important;
+}
+
+/* Hover Interaction: Premium Lift Effect Upwards */
+.profile-social-grid .social-box:hover {
+    transform: translateY(-4px) !important;
+}
+
+/* 1. LINKEDIN BOX COLOR PARADIGMS */
+.profile-social-grid .box-linkedin {
+    background-color: #0077B5 !important; /* Authentic LinkedIn Brand Blue */
+    color: #FFFFFF !important;
+}
+.profile-social-grid .box-linkedin:hover {
+    background-color: #005987 !important; /* Executive deep hover shift */
+    box-shadow: 0 6px 16px rgba(0, 119, 181, 0.3) !important;
+}
+
+/* 2. GITHUB BOX COLOR PARADIGMS */
+.profile-social-grid .box-github {
+    background-color: #0F172A !important; /* Sleek Deep Slate Charcoal */
+    color: #FFFFFF !important;
+}
+.profile-social-grid .box-github:hover {
+    background-color: #1E293B !important; /* High contrast silver-slate balance transition */
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25) !important;
+}
+
+/* 3. MAIL BOX COLOR PARADIGMS */
+.profile-social-grid .box-mail {
+    background-color: #0284C7 !important; /* Your Custom Brand Corporate Blue */
+    color: #FFFFFF !important;
+}
+.profile-social-grid .box-mail:hover {
+    background-color: #0369A1 !important; /* Matches primary theme button hover precisely */
+    box-shadow: 0 6px 16px rgba(2, 132, 199, 0.3) !important;
+}
+
+/* Forces icons internally to render flawlessly centered with no color leaks */
+.profile-social-grid .social-box i {
+    color: #FFFFFF !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
