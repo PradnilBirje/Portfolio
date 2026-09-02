@@ -2585,3 +2585,274 @@ a:focus {
     margin: 0 !important;
     padding: 0 !important;
 }
+
+
+/* ==========================================================================
+   HARRISON-STYLE INTERACTIVE TIMELINE (CORPORATE EDITION)
+   ========================================================================== */
+
+.corporate-timeline-section {
+    padding: 80px 0 !important;
+    background-color: #FFFFFF !important;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.text-muted {
+    color: #64748B !important;
+    font-size: 0.95rem;
+}
+
+/* Timeline Layout Base Structure Track */
+.harrison-timeline-track {
+    position: relative !important;
+    padding: 30px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important; /* Tighter gap matching Harrison's collapsed look */
+}
+
+/* Master Continuous Vertical Guide Rail Line */
+.harrison-timeline-track::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 40px !important;
+    bottom: 40px !important;
+    left: 140px !important;
+    width: 2px !important;
+    background: #E2E8F0 !important;
+    z-index: 1 !important;
+}
+
+.timeline-node-item {
+    display: flex !important;
+    width: 100% !important;
+    position: relative !important;
+    transition: all 0.3s ease;
+}
+
+/* Left-Side Date Marker Columns */
+.node-year-col {
+    width: 110px !important;
+    text-align: right !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #94A3B8 !important;
+    padding-top: 6px !important;
+    flex-shrink: 0 !important;
+}
+
+/* Center Guide Rail Node Dot Wrapper Columns */
+.node-marker-col {
+    width: 60px !important;
+    display: flex !important;
+    justify-content: center !important;
+    position: relative !important;
+    flex-shrink: 0 !important;
+    z-index: 2 !important;
+}
+
+.timeline-dot-indicator {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #FFFFFF !important;
+    border: 2px solid #CBD5E1 !important;
+    border-radius: 50% !important;
+    margin-top: 12px !important;
+    transition: all 0.25s ease !important;
+}
+
+/* Right-Side Block Panel Area Container */
+.node-content-col {
+    flex-grow: 1 !important;
+    padding-left: 10px !important;
+    text-align: left !important;
+}
+
+/* Accordion Component Resets & Configuration */
+.timeline-accordion {
+    width: 100% !important;
+    background: transparent !important;
+}
+
+/* Hides native browser disclosure arrow triangles completely */
+.timeline-accordion summary::-webkit-details-marker {
+    display: none !important;
+}
+.timeline-accordion summary {
+    list-style: none !important;
+    outline: none !important;
+}
+
+/* Clickable Interactive Area Flex Row Group styling */
+.accordion-trigger {
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    cursor: pointer !important;
+    padding: 4px 0 !important;
+    width: 100% !important;
+}
+
+.trigger-heading-group {
+    flex-grow: 1 !important;
+    padding-right: 20px !important;
+}
+
+/* Core Panel Heading Typographies */
+.trigger-heading-group h3 {
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: #0F172A !important;
+    margin: 0 0 2px 0 !important;
+}
+
+.trigger-heading-group h4 {
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    color: #0284C7 !important; /* Premium Corporate Blue Theme Base */
+    margin: 0 0 4px 0 !important;
+}
+
+.node-meta {
+    font-size: 0.9rem !important;
+    color: #64748B !important;
+    margin: 0 !important;
+}
+
+/* HARRISON PLUS ICON INDICATOR COMPONENT BLOCK */
+.accordion-plus-icon {
+    width: 32px !important;
+    height: 32px !important;
+    background-color: #F1F5F9 !important; /* Crisp subtle off-white/light grey */
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    flex-shrink: 0 !important;
+    margin-top: 4px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Draws the Horizontal Bar segment inside the plus container */
+.accordion-plus-icon::before {
+    content: '' !important;
+    position: absolute !important;
+    width: 12px !important;
+    height: 2px !important;
+    background-color: #0284C7 !important; /* Corporate Brand Blue Line */
+    transition: transform 0.3s ease !important;
+}
+
+/* Draws the Vertical Bar segment inside the plus container */
+.accordion-plus-icon::after {
+    content: '' !important;
+    position: absolute !important;
+    width: 2px !important;
+    height: 12px !important;
+    background-color: #0284C7 !important;
+    transition: transform 0.3s ease !important;
+}
+
+/* Collapsible inner markdown description content wrapper panel */
+.accordion-body-content {
+    padding-top: 14px !important;
+    padding-bottom: 10px !important;
+    animation: slideDownFade 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.node-desc {
+    font-size: 1.05rem !important;
+    line-height: 1.65 !important;
+    color: #475569 !important;
+    max-width: 800px !important;
+    margin: 0 !important;
+}
+
+/* ==========================================================================
+   ACTIVE INTERACTIVE STATE CONTROLS (WHEN ACCORDION IS OPENED)
+   ========================================================================== */
+
+/* 1. Rotates out the vertical line crossbar segment to mimic a neat transformation to a minus '-' symbol */
+.timeline-accordion[open] .accordion-plus-icon::after {
+    transform: rotate(90deg) scaleY(0) !important;
+}
+
+/* 2. Shifts background contrast fill of the active circular toggle area box */
+.timeline-accordion[open] .accordion-plus-icon {
+    background-color: #0284C7 !important; /* Switches container track to solid brand blue */
+}
+.timeline-accordion[open] .accordion-plus-icon::before {
+    background-color: #FFFFFF !important; /* Crossbar switches to clean bright white */
+}
+
+/* 3. Guide rail marker line indicator interaction sync focus */
+.timeline-node-item:hover .timeline-dot-indicator,
+.timeline-accordion[open] ~ .node-marker-col .timeline-dot-indicator {
+    border-color: #0284C7 !important;
+    background-color: #0284C7 !important;
+    transform: scale(1.2) !important;
+}
+
+.timeline-node-item:hover .node-year-col {
+    color: #0F172A !important;
+}
+
+/* Smooth expansion panel opacity transition animations */
+@keyframes slideDownFade {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBILE SCREEN BREAKPOINT OPTIMIZATIONS wide view overrides */
+@media (max-width: 768px) {
+    .harrison-timeline-track::before {
+        left: 20px !important;
+    }
+    
+    .timeline-node-item {
+        flex-direction: column !important;
+        padding-left: 45px !important;
+    }
+    
+    .node-year-col {
+        width: 100% !important;
+        text-align: left !important;
+        margin-bottom: 6px !important;
+    }
+    
+    .node-marker-col {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: auto !important;
+    }
+    
+    .timeline-dot-indicator {
+        margin-top: 8px !important;
+    }
+}
+
+/* ==========================================================================
+   GAP & VERTICAL SPACING RESET (REMOVE EXCESS BLANK SPACE)
+   ========================================================================== */
+
+/* 1. Neutralizes the old template's broken overlapping margin blocks */
+.about {
+    margin: 0 !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    min-height: auto !important; /* Prevents the section from stretching artificially */
+}
+
+/* 2. Tightens the area directly between the bio and your new journey timeline */
+.corporate-timeline-section {
+    padding-top: 20px !important; /* Pulls the timeline section closer upward */
+    margin-top: 0 !important;
+}
+
+/* 3. Cleans up any duplicate container gaps below your profile image columns */
+.about .row {
+    margin-bottom: 0 !important;
+}
