@@ -3181,3 +3181,272 @@ a:focus {
         grid-template-columns: 1fr !important; /* Stack vertically single stream row on devices */
     }
 }
+
+/* ==========================================================================
+   ADVANCED 4-COLUMN DATA ANALYTICS TOOLKIT SECTION (CORPORATE EDITION)
+   ========================================================================== */
+
+.analytics-toolkit-section {
+    padding: 80px 0 !important;
+    background-color: #FFFFFF !important; /* Stark crisp executive backdrop */
+}
+
+/* Dynamic Multi-Column Flex Grid Setup matching 4 categories */
+.toolkit-columns-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+    gap: 24px !important;
+    max-width: 1200px;
+    margin: 40px auto 0 auto !important;
+    padding: 0 15px !important;
+}
+
+/* Premium Card Panels Architecture */
+.toolkit-card-column {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 20px !important; /* Elegant curved borders */
+    padding: 30px 24px !important;
+    text-align: left !important;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.02) !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Interactive Hover Lift & Corporate Blue Accent Focus Change */
+.toolkit-card-column:hover {
+    transform: translateY(-6px) !important;
+    border-color: #0284C7 !important; /* Accent Blue Focus Ring */
+    box-shadow: 0 20px 25px -5px rgba(2, 132, 199, 0.1) !important;
+}
+
+/* Card Column Header Elements Alignment */
+.column-header-group {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    margin-bottom: 24px !important;
+    border-bottom: 1px solid #F1F5F9 !important;
+    padding-bottom: 16px !important;
+}
+
+.column-icon-shape {
+    width: 44px;
+    height: 44px;
+    background-color: #F1F5F9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+}
+
+.toolkit-card-column:hover .column-icon-shape {
+    background-color: #E0F2FE; /* Subtle corporate light blue background shift */
+}
+
+.column-icon-shape i {
+    font-size: 18px;
+    color: #0284C7 !important; /* Signature Corporate Blue */
+}
+
+.column-header-group h3 {
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    color: #0F172A !important;
+    margin: 0 !important;
+    line-height: 1.3 !important;
+}
+
+/* Sub-headings Setup inside cards */
+.toolkit-subgroup h4 {
+    font-size: 0.78rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    color: #94A3B8 !important; /* Muted gray grouping tags */
+    margin: 0 0 12px 0 !important;
+}
+
+/* Competency Descriptive Lists Setup */
+.competency-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 0 24px 0 !important;
+}
+
+.competency-list li {
+    font-size: 0.95rem !important;
+    color: #475569 !important; /* Highly readable executive layout text font color */
+    padding: 6px 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-bottom: 1px dashed #F1F5F9;
+}
+
+.bullet-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #CBD5E1;
+    border-radius: 50%;
+    transition: background-color 0.25s ease;
+}
+
+.toolkit-card-column:hover .bullet-dot {
+    background-color: #0284C7; /* Active list bullets flip to blue on focus */
+}
+
+/* Modern Pill Badges Matrix Layout Cloud */
+.badge-matrix-cloud {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    margin-top: auto !important; /* Forces badge stack to sit perfectly at the bottom container floor */
+}
+
+.tech-badge {
+    background-color: #F8FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+    color: #475569 !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    padding: 6px 12px !important;
+    border-radius: 8px !important; /* Rounded square corporate aesthetic badges */
+    transition: all 0.25s ease !important;
+}
+
+/* Interactive Badge Behavior changes */
+.toolkit-card-column:hover .tech-badge {
+    background-color: #F0F9FF !important;
+    border-color: #BAE6FD !important;
+    color: #0369A1 !important;
+}
+
+.tech-badge:hover {
+    background-color: #0284C7 !important; /* Direct mouse hover fills badge completely with brand blue */
+    border-color: #0284C7 !important;
+    color: #FFFFFF !important;
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE VIEWPORT BREAKPOINTS (Smartphone scaling frameworks) */
+@media (max-width: 768px) {
+    .toolkit-columns-container {
+        grid-template-columns: 1fr !important; /* Compress grid matrix into single stream track list rows on mobile screens */
+        gap: 16px !important;
+    }
+}
+
+/* ==========================================================================
+   HARRISON-STYLE HIGH-LEVEL ANALYTICS OVERVIEW GRID (CORPORATE BLUE)
+   ========================================================================== */
+
+.analytics-solutions-section {
+    padding: 80px 0 40px 0 !important; /* Spacious upper padding, tighter lower bound */
+    background-color: #FFFFFF !important;
+    max-width: 1200px;
+    margin: 0 auto !important;
+}
+
+/* Minimalist Left-Aligned Header Block to replicate Harrison's style */
+.text-left-aligned {
+    text-align: left !important;
+    padding: 0 15px !important;
+    margin-bottom: 45px !important;
+}
+
+.section-num-tag {
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px !important;
+    color: #0284C7 !important; /* Signature Corporate Blue */
+    margin-bottom: 12px !important;
+    text-transform: uppercase;
+}
+
+.section-main-title {
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    color: #0F172A !important; /* Rich deep corporate slate */
+    margin: 0 0 12px 0 !important;
+    letter-spacing: -0.5px !important;
+}
+
+.section-sub-intro {
+    font-size: 1.15rem !important;
+    color: #64748B !important;
+    margin: 0 !important;
+}
+
+/* Clean Asymmetric Layout Columns Grid Grid Structure */
+.solutions-grid-matrix {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    gap: 32px !important; /* Spacious column separating gaps */
+    padding: 0 15px !important;
+}
+
+/* Base Configuration for Harrison's Clean Solution Cards */
+.solution-item-box {
+    background: #FFFFFF !important;
+    padding: 20px 10px !important; /* Minimalist internal frame margins */
+    text-align: left !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: transform 0.25s ease !important;
+}
+
+/* Subtle lift animation on card focus */
+.solution-item-box:hover {
+    transform: translateY(-4px) !important;
+}
+
+/* Minimalist Soft Rounded Icon Holders */
+.solution-icon-holder {
+    width: 42px;
+    height: 42px;
+    background-color: #F0F9FF; /* Very soft brand corporate blue tint */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: background-color 0.25s ease;
+}
+
+.solution-item-box:hover .solution-icon-holder {
+    background-color: #E0F2FE; /* Shifts deepers slightly on card hover */
+}
+
+.solution-icon-holder i {
+    font-size: 16px;
+    color: #0284C7 !important; /* Primary Brand Accent Color */
+}
+
+/* Solution Heading Architectures */
+.solution-item-box h3 {
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: #0F172A !important;
+    margin: 0 0 10px 0 !important;
+}
+
+/* Highly detailed analytics copy texts positioning specifications */
+.solution-item-box p {
+    font-size: 1.02rem !important;
+    line-height: 1.6 !important;
+    color: #475569 !important; /* High utility readable corporate gray text */
+    margin: 0 !important;
+}
+
+/* RESPONSIVE SCALING FRAMEWORKS (Smartphone viewport configurations) */
+@media (max-width: 768px) {
+    .section-main-title {
+        font-size: 1.75rem !important; /* Scales title down gracefully on smaller screens */
+    }
+    .solutions-grid-matrix {
+        grid-template-columns: 1fr !important; /* Collapse grid track directly to single stream rows */
+        gap: 24px !important;
+    }
+}
