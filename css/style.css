@@ -2856,3 +2856,328 @@ a:focus {
 .about .row {
     margin-bottom: 0 !important;
 }
+
+/* ==========================================================================
+   STABLE INTERACTIVE TIMELINE WORKSPACE RESCUE (NO RUNTIME ERRORS)
+   ========================================================================== */
+
+.corporate-timeline-section {
+    padding: 60px 0 !important;
+    background-color: #FFFFFF !important;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Base Node Track Setup */
+.harrison-timeline-track {
+    position: relative !important;
+    padding: 30px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+}
+
+/* Clean Left Vertical Alignment Guide Rail */
+.harrison-timeline-track::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 40px !important;
+    bottom: 40px !important;
+    left: 140px !important;
+    width: 2px !important;
+    background: #E2E8F0 !important;
+    z-index: 1 !important;
+}
+
+.timeline-node-item {
+    display: flex !important;
+    width: 100% !important;
+    position: relative !important;
+}
+
+/* Left Date Indicator Columns */
+.node-year-col {
+    width: 110px !important;
+    text-align: right !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #94A3B8 !important;
+    padding-top: 6px !important;
+    flex-shrink: 0 !important;
+}
+
+/* Center Guide Rail Node Dot Anchors */
+.node-marker-col {
+    width: 60px !important;
+    display: flex !important;
+    justify-content: center !important;
+    position: relative !important;
+    flex-shrink: 0 !important;
+    z-index: 2 !important;
+}
+
+.timeline-dot-indicator {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #FFFFFF !important;
+    border: 2px solid #CBD5E1 !important;
+    border-radius: 50% !important;
+    margin-top: 12px !important;
+}
+
+/* Right Content Columns Layout Rules */
+.node-content-col {
+    flex-grow: 1 !important;
+    padding-left: 10px !important;
+}
+
+/* Safe Accordion Resets */
+.timeline-accordion summary::-webkit-details-marker { display: none !important; }
+.timeline-accordion summary { list-style: none !important; outline: none !important; }
+
+.accordion-trigger {
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    cursor: pointer !important;
+    width: 100% !important;
+}
+
+.trigger-heading-group h3 { font-size: 1.25rem !important; font-weight: 700 !important; color: #0F172A !important; margin: 0 0 2px 0 !important; }
+.trigger-heading-group h4 { font-size: 1.05rem !important; font-weight: 600 !important; color: #0284C7 !important; margin: 0 0 4px 0 !important; }
+.node-meta { font-size: 0.9rem !important; color: #64748B !important; margin: 0 !important; }
+
+/* Dynamic Plus Icon Matrix Elements */
+.accordion-plus-icon {
+    width: 32px !important;
+    height: 32px !important;
+    background-color: #F1F5F9 !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    flex-shrink: 0 !important;
+    margin-top: 4px !important;
+}
+
+.accordion-plus-icon::before {
+    content: '' !important;
+    position: absolute !important;
+    width: 12px !important;
+    height: 2px !important;
+    background-color: #0284C7 !important;
+}
+
+.accordion-plus-icon::after {
+    content: '' !important;
+    position: absolute !important;
+    width: 2px !important;
+    height: 12px !important;
+    background-color: #0284C7 !important;
+}
+
+.accordion-body-content { padding-top: 14px !important; }
+.node-desc { font-size: 1.05rem !important; line-height: 1.65 !important; color: #475569 !important; }
+
+/* Interactive Hover & Toggle States */
+.timeline-accordion[open] .accordion-plus-icon::after { display: none !important; }
+.timeline-accordion[open] .accordion-plus-icon { background-color: #0284C7 !important; }
+.timeline-accordion[open] .accordion-plus-icon::before { background-color: #FFFFFF !important; }
+
+.timeline-node-item:hover .timeline-dot-indicator,
+.timeline-accordion[open] ~ .node-marker-col .timeline-dot-indicator {
+    border-color: #0284C7 !important;
+    background-color: #0284C7 !important;
+}
+
+@media (max-width: 768px) {
+    .harrison-timeline-track::before { left: 20px !important; }
+    .timeline-node-item { flex-direction: column !important; padding-left: 45px !important; }
+    .node-year-col { width: 100% !important; text-align: left !important; }
+    .node-marker-col { position: absolute !important; left: 0 !important; top: 0 !important; }
+}
+
+/* ==========================================================================
+   ISOLATED SCROLL REVEAL DRIVER STATE CONFIGURATIONS
+   ========================================================================== */
+
+/* 1. Base State: Keeps items completely hidden and shifted down by default */
+.timeline-node-item {
+    opacity: 0 !important;
+    transform: translateY(45px) !important;
+    transition: opacity 0.85s cubic-bezier(0.25, 1, 0.5, 1) !important,
+                transform 0.85s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    will-change: opacity, transform;
+}
+
+/* 2. Active Revealed State: Fades and lifts items into place */
+.timeline-node-item.reveal-active {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* 3. The Vertical Track Guide Line: Fades in dynamically with the cards */
+.harrison-timeline-track::before {
+    opacity: 0 !important;
+    transition: opacity 1.2s ease 0.4s !important;
+}
+
+.harrison-timeline-track.track-visible::before {
+    opacity: 1 !important;
+}
+
+/* ==========================================================================
+   HARRISON-STYLE CASE STUDIES SECTION (CORPORATE BLUE & WHITE)
+   ========================================================================== */
+
+.portfolio-rescue-section {
+    padding: 80px 0 !important;
+    background-color: #F8FAFC !important; /* Soft backdrop separation layer */
+}
+
+/* 1. Minimalist Pill Filter Bar Adjustments */
+#portfolio-filter-rescue {
+    padding: 0 !important;
+    margin: 0 auto 40px auto !important;
+    list-style: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+#portfolio-filter-rescue .filter-btn {
+    cursor: pointer !important;
+    padding: 10px 24px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #475569 !important; /* Elegant slate grey labels */
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 30px !important; /* Clean rounded edges */
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Hover and Active selection configurations */
+#portfolio-filter-rescue .filter-btn:hover,
+#portfolio-filter-rescue .filter-btn.active-tab {
+    color: #FFFFFF !important;
+    background-color: #0284C7 !important; /* Custom Corporate Blue Accent */
+    border-color: #0284C7 !important;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.15) !important;
+}
+
+/* 2. Responsive Multi-Column Project Matrix Grid */
+.case-studies-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+    gap: 30px !important;
+    max-width: 1140px;
+    margin: 0 auto !important;
+    padding: 10px 15px !important;
+}
+
+/* 3. High-Contrast Modern Card Architectures */
+.case-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 16px !important; /* Curved card parameters */
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02) !important;
+}
+
+.case-card:hover {
+    transform: translateY(-6px) !important; /* Smooth pop lift upwards */
+    border-color: #0284C7 !important; /* Accent border focus change */
+    box-shadow: 0 16px 28px -10px rgba(2, 132, 199, 0.18) !important;
+}
+
+/* Visual frame representing project mockups */
+.card-visual-frame {
+    height: 200px !important;
+    background-color: #F1F5F9 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.card-placeholder-icon {
+    font-size: 48px !important;
+    color: #94A3B8 !important;
+}
+
+/* Content Information Blocks */
+.card-details-box {
+    padding: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    text-align: left !important;
+}
+
+.card-tech-badge {
+    align-self: flex-start !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    color: #0284C7 !important;
+    background-color: #E0F2FE !important; /* Soft blue highlight tag fill */
+    padding: 4px 10px !important;
+    border-radius: 6px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 12px !important;
+}
+
+.card-details-box h3 {
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    color: #0F172A !important;
+    margin: 0 0 8px 0 !important;
+}
+
+.card-details-box p {
+    font-size: 0.98rem !important;
+    line-height: 1.55 !important;
+    color: #475569 !important;
+    margin-bottom: 20px !important;
+    flex-grow: 1 !important;
+}
+
+/* Interactive Text Links without unexpected template red decor lines */
+.card-action-link {
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    color: #0284C7 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    transition: color 0.2s ease !important;
+    text-decoration: none !important;
+    margin-top: auto !important;
+}
+
+.card-action-link:hover {
+    color: #0369A1 !important;
+}
+
+/* MOBILE CORES BREAKPOINT CORRECTIONS (Screens under 768px wide) */
+@media (max-width: 768px) {
+    #portfolio-filter-rescue {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    #portfolio-filter-rescue .filter-btn {
+        text-align: center !important;
+        width: 100% !important;
+    }
+    .case-studies-grid {
+        grid-template-columns: 1fr !important; /* Stack vertically single stream row on devices */
+    }
+}

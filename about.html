@@ -296,3 +296,49 @@
             </div>
         </div>
         <!-- Footer End -->
+
+<!-- ISOLATED VIEWPORT ANIMATION ENGINE FOR JOURNEY TIMELINE -->
+<script>
+(function() {
+    document.addEventListener("DOMContentLoaded", function () {
+        const targetNodes = document.querySelectorAll(".timeline-node-item");
+        const timelineLine = document.querySelector(".harrison-timeline-track");
+
+        // Safety Trigger: If the browser is old or has an error, show data immediately
+        if (!('IntersectionObserver' in window)) {
+            targetNodes.forEach(node => node.classList.add("reveal-active"));
+            if (timelineLine) timelineLine.classList.add("track-visible");
+            return;
+        }
+
+        // Configuration: Tells the browser to trigger when the item is 15% onto the screen
+        const elementScrollOptions = {
+            root: null,
+            rootMargin: "0px 0px -15% 0px",
+            threshold: 0.15
+        };
+
+        const scrollRevealEngine = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    // Inject the class that drives the smooth CSS animation
+                    entry.target.classList.add("reveal-active");
+                    
+                    // Simultaneously fade in the vertical connector line track
+                    if (timelineLine) {
+                        timelineLine.classList.add("track-visible");
+                    }
+                    
+                    // Disengage monitoring for this item so it stays visible permanently
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, elementScrollOptions);
+
+        // Bind the observer engine to your timeline elements
+        targetNodes.forEach(function(node) {
+            scrollRevealEngine.observe(node);
+        });
+    });
+})();
+</script>
