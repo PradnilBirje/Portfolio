@@ -3450,3 +3450,166 @@ a:focus {
         gap: 24px !important;
     }
 }
+
+/* ==========================================================================
+   HARRISON-STYLE CORPORATE ARTICLES GRID (BLUE & WHITE EDITION)
+   ========================================================================== */
+
+.corporate-blog-section {
+    padding: 80px 0 !important;
+    background-color: #FFFFFF !important; /* Clean, high-contrast background */
+}
+
+/* Fluid responsive CSS layout grid matching professional dimensions */
+.blog-articles-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)) !important;
+    gap: 32px !important;
+    max-width: 1140px;
+    margin: 40px auto 0 auto !important;
+    padding: 0 15px !important;
+}
+
+/* Premium Publication Panel Architecture */
+.article-panel-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 16px !important; /* Smooth curved card edges */
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.02) !important;
+}
+
+/* Smooth Lift Animation with Accent Blue Focus Ring */
+.article-panel-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: #0284C7 !important;
+    box-shadow: 0 20px 25px -5px rgba(2, 132, 199, 0.1) !important;
+}
+
+/* Image Presentation Frame Geometry */
+.article-image-frame {
+    position: relative !important;
+    height: 220px !important;
+    width: 100% !important;
+    background-color: #F8FAFC !important;
+    overflow: hidden !important;
+    border-bottom: 1px solid #F1F5F9 !important;
+}
+
+.article-thumb {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important; /* Keeps your text graphics from distorting */
+    padding: 15px !important;
+    transition: transform 0.5s ease !important;
+}
+
+.article-panel-card:hover .article-thumb {
+    transform: scale(1.03); /* Subtle premium scaling on photo layout */
+}
+
+/* Tech Category Float Tags */
+.article-category-tag {
+    position: absolute !important;
+    top: 16px !important;
+    left: 16px !important;
+    background-color: #0284C7 !important; /* Custom Corporate Blue */
+    color: #FFFFFF !important;
+    font-size: 0.72rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    padding: 6px 12px !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 10px rgba(2, 132, 199, 0.2) !important;
+    z-index: 3;
+}
+
+/* Details Information Boxes Layout */
+.article-details-block {
+    padding: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    text-align: left !important;
+}
+
+/* Clean, Muted Meta Tags Row */
+.article-meta-row {
+    display: flex !important;
+    gap: 16px !important;
+    margin-bottom: 12px !important;
+    font-size: 0.82rem !important;
+    color: #94A3B8 !important; /* Slate grey meta copy */
+    font-weight: 600;
+}
+
+.article-meta-row i {
+    color: #0284C7 !important; /* Small icons accent blue */
+    margin-right: 4px;
+}
+
+/* Article Heading Typographies */
+.article-details-block h3 {
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: #0F172A !important;
+    line-height: 1.4 !important;
+    margin: 0 0 10px 0 !important;
+}
+
+/* Article Short Description Summary copy */
+.article-details-block p {
+    font-size: 0.96rem !important;
+    line-height: 1.6 !important;
+    color: #475569 !important; /* Premium corporate executive font color readability */
+    margin-bottom: 24px !important;
+    flex-grow: 1 !important;
+}
+
+/* Clean Link Action Buttons without unwanted underline styles */
+.article-read-btn {
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    color: #0284C7 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    transition: color 0.2s ease !important;
+    margin-top: auto !important;
+}
+
+.article-read-btn:hover {
+    color: #0369A1 !important; /* Darker blue shift on focus link interaction */
+}
+
+/* Placeholder card styles for future articles */
+.article-placeholder-frame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
+}
+.placeholder-icon {
+    font-size: 64px !important;
+    color: #CBD5E1 !important;
+}
+.article-read-btn.disabled-btn {
+    color: #94A3B8 !important;
+    cursor: not-allowed;
+}
+
+/* MOBILE CORES BREAKPOINT CORRECTIONS (Smartphone optimization standards) */
+@media (max-width: 768px) {
+    .blog-articles-grid {
+        grid-template-columns: 1fr !important; /* Compress multi-columns to single stream on device windows */
+        gap: 20px !important;
+    }
+}
