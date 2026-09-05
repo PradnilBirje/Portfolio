@@ -3799,3 +3799,204 @@ a:focus {
         gap: 40px !important;
     }
 }
+
+/* ==========================================================================
+   ISOLATED SITEMAP FOOTER OVERHAUL (ALIGNMENT RESCUE COMPLETE)
+   ========================================================================== */
+
+.pb-custom-master-footer {
+    display: block !important;
+    background-color: #0F172A !important; /* Deep Premium Charcoal Navy */
+    padding: 80px 0 40px 0 !important;
+    border-top: 1px solid #1E293B !important;
+    width: 100% !important;
+    position: relative !important;
+    clear: both !important;
+    box-sizing: border-box !important;
+}
+
+/* Forces the elements out of standard narrow gutters into a widescreen format */
+.pb-footer-inner-wrapper {
+    width: 100% !important;
+    max-width: 1140px !important;
+    margin: 0 auto !important;
+    padding: 0 30px !important;
+    box-sizing: border-box !important;
+}
+
+/* Master row layout forcing columns to sit perfectly apart from left to right */
+.pb-footer-directory-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 32px !important;
+    justify-content: space-between !important; /* Forces uniform spacing across the horizontal canvas */
+    align-items: flex-start !important;
+    padding-bottom: 50px !important;
+    border-bottom: 1px solid #1E293B !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+/* COLUMN ONE CONFIGURATION: BIO CARD PROFILE */
+.pb-footer-summary-column {
+    flex: 1 1 380px !important; /* Claims broader display area span */
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: left !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.pb-footer-brand-title {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin: 0 0 20px 0 !important;
+}
+
+.pb-brand-initials {
+    background-color: #0284C7 !important; /* Corporate Blue Accent */
+    color: #FFFFFF !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 6px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.pb-footer-brand-title h3 {
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important; /* Solid high-contrast white */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.pb-brand-paragraph {
+    font-size: 0.96rem !important;
+    line-height: 1.65 !important;
+    color: #94A3B8 !important; /* Clear readable slate grey */
+    max-width: 400px !important;
+    margin: 0 0 24px 0 !important;
+    padding: 0 !important;
+}
+
+.pb-footer-anchor-email {
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    border-bottom: 1px dashed #334155 !important;
+    padding-bottom: 2px !important;
+    align-self: flex-start !important; /* Keeps anchor width compact */
+    transition: all 0.2s ease !important;
+}
+
+.pb-footer-anchor-email:hover {
+    color: #0284C7 !important;
+    border-color: #0284C7 !important;
+}
+
+/* COLUMNS TWO & THREE CONFIGURATION: SITEMAP LINKS */
+.pb-footer-links-column {
+    flex: 1 1 160px !important; /* Ensures link sections stack cleanly as individual columns */
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: left !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.pb-footer-links-column h4 {
+    font-size: 0.78rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    color: #64748B !important; /* Subdued headers */
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+    font-weight: 700 !important;
+}
+
+/* Wipes out template's inherited vertical alignment and lists configurations */
+.pb-footer-nav-list {
+    list-style: none !important;
+    list-style-type: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important; /* Healthy breathing room between link choices */
+    align-items: flex-start !important;
+}
+
+.pb-footer-nav-list li {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    background: none !important; /* Strips old template bullet styles */
+}
+
+.pb-footer-nav-list li a {
+    font-size: 0.96rem !important;
+    font-weight: 500 !important;
+    color: #94A3B8 !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    transition: color 0.25s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding: 2px 0 !important;
+}
+
+.pb-footer-nav-list li a:hover {
+    color: #FFFFFF !important; /* Shakes off grey for stark white on hover */
+}
+
+.pb-arrow-icon {
+    font-size: 11px !important;
+    color: #475569 !important;
+    transition: color 0.25s ease !important;
+}
+
+.pb-footer-nav-list li a:hover .pb-arrow-icon {
+    color: #0284C7 !important;
+}
+
+/* BASELINE BOTTOM ROW STRIP FL00R */
+.pb-footer-baseline-floor {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+    padding-top: 30px !important;
+    font-size: 0.86rem !important;
+    color: #475569 !important;
+    text-align: left !important;
+    width: 100% !important;
+}
+
+.pb-footer-baseline-floor p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* RESPONSIVE ADAPTER BREAKPOINTS (Mobile view frame corrections) */
+@media (max-width: 768px) {
+    .pb-footer-directory-grid {
+        flex-direction: column !important; /* Collapses safely downward into one line on mobile screens */
+        gap: 40px !important;
+    }
+    .pb-footer-summary-column {
+        flex: 1 1 100% !important;
+    }
+    .pb-footer-baseline-floor {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+}
