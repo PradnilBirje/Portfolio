@@ -487,43 +487,84 @@
 
         
 
-        <!-- Contact Start -->
-        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+        <!-- Premium Corporate Contact Section Start -->
+        <div class="corporate-contact-section" id="contact">
             <div class="container-fluid">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8">
-                            <div class="contact-form">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
+                <!-- Section Title Headers -->
+                <div class="section-header text-center">
+                    <p>06 — CONNECT WITH ME</p>
+                    <h2>Let’s Start a Conversation</h2>
+                    <small class="text-muted d-block mt-2">Open for full-time Data Analyst roles and technical collaborations</small>
+                </div>
+
+                <div class="contact-workspace-row">
+                    <!-- Left Side: Availability & Quick Links -->
+                    <div class="contact-info-panel">
+                        <div class="availability-status-card">
+                        <span class="status-pulse-dot"></span>
+                    <p><strong>Current Status:</strong> Actively Interviewing</p>
+                </div>
+                <h3>Hiring & Opportunities</h3>
+                <p class="panel-intro-text">I am currently seeking full-time opportunities as a Junior/Associate Data Analyst, Business Intelligence Engineer, or Data Infrastructure Specialist.</p>
+                
+                <div class="direct-contact-channels">
+                    <div class="channel-item">
+                        <div class="channel-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="channel-text">
+                            <h4>Location Baseline</h4>
+                            <p>Mumbai, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    <div class="channel-item">
+                        <div class="channel-icon-box"><i class="far fa-envelope"></i></div>
+                        <div class="channel-text">
+                            <h4>Direct Inbox</h4>
+                            <p>pradnilbirje01@gmail.com</p> <!-- Replace with your actual public email -->
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Right Side: Clean Structured Corporate Message Form -->
+            <div class="contact-form-panel">
+                <form id="corporate-contact-form" action="#" method="POST">
+                    
+                    <!-- Row 1: Name and Email Side-by-Side -->
+                    <div class="form-inputs-row">
+                        <div class="input-field-group">
+                            <label for="form-name">Your Full Name</label>
+                            <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="input-field-group">
+                            <label for="form-email">Your Email Address</label>
+                            <input type="email" id="form-email" name="email" placeholder="johndoe@company.com" required>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Subject Line -->
+                    <div class="input-field-group mt-3">
+                        <label for="form-subject">Subject</label>
+                        <input type="text" id="form-subject" name="subject" placeholder="Data Analyst Role Opportunity / Interview Invitation" required>
+                    </div>
+
+                    <!-- Row 3: Message Textarea Frame -->
+                    <div class="input-field-group mt-3">
+                        <label for="form-message">Message Details</label>
+                        <textarea id="form-message" name="message" rows="5" placeholder="Hi Pradnil, I reviewed your Power BI and SQL case studies. Let's sync up for an upcoming opening..." required></textarea>
+                    </div>
+
+                    <!-- Form Action Trigger Button Alignment -->
+                    <div class="form-action-button-align mt-4">
+                        <button type="submit" class="btn-harrison btn-harrison-blue">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                    </div>
+
+                </form>
+            </div>
         </div>
-        <!-- Contact End -->
+    </div>
+</div>
+<!-- Premium Corporate Contact Section End -->
+
 
 
         <!-- Footer Start -->
